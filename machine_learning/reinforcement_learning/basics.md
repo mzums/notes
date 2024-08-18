@@ -4,6 +4,16 @@ It concerns how an intelligent agent should take actions to maximize cumulative 
   
 ![alt text](image.png)
 
+
+## Types
+```mermaid
+flowchart TD;
+    id1[[Reinfocement Learning]]-->id2[Model based];
+    id1[[Reinfocement Learning]]-->id3[Model free];
+    id3[Model free]-->id4[on-policy]
+    id3[Model free]-->id5[off-policy]
+```
+
 ## Policy
 In AI and Reinforcement Learning (RL), policy refers to an agent's strategy to interact with an environment. Policies define the behavior of an agent. A policy determines the next action an agent takes in response to the current state of the environment.  
   
