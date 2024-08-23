@@ -8,10 +8,14 @@ It concerns how an intelligent agent should take actions to maximize cumulative 
 ## Types
 ```mermaid
 flowchart TD;
-    id1[[Reinfocement Learning]]-->id2[Model based];
-    id1[[Reinfocement Learning]]-->id3[Model free];
-    id3[Model free]-->id4[on-policy]
-    id3[Model free]-->id5[off-policy]
+    id1[[Reinforcement Learning]]-->id2[Model based];
+    id1[[Reinforcement Learning]]-->id3[Model free];
+    id3[Model free]-->id4[Gradient free]
+    id3[Model free]-->id5[Gradient based]
+    id4[Gradient free]-->id6[on-policy]
+    id4[Gradient free]-->id7[off-policy]
+    id2[Model based]-->id8[Markov Decision Process]
+    id2[Model based]-->id9[Nonlinear Dynamics]
 ```
 
 ## Policy
